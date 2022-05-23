@@ -22,7 +22,7 @@ type OrdersBodyOrder struct {
 	ShipTo    OrdersBodyShipTo    `xml:"SHIP_TO"`
 	Shipment  OrdersBodyShipment  `xml:"SHIPMENT"`
 	Payment   OrdersBodyPayment   `xml:"PAYMENT"`
-	Items     []OrdersBodyItem    `xml:"ITEMS"`
+	Items     OrdersBodyItems     `xml:"ITEMS"`
 }
 
 type OrdersBodyOrderData struct {
@@ -69,6 +69,10 @@ type OrdersBodyShipment struct {
 type OrdersBodyPayment struct {
 	Price       float64     `xml:"PRICE"`
 	DirectDebit interface{} `xml:"DIRECTDEBIT"`
+}
+
+type OrdersBodyItems struct {
+	Item []OrdersBodyItem `xml:"ITEM"`
 }
 
 type OrdersBodyItem struct {
