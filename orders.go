@@ -77,7 +77,7 @@ type OrdersBodyItems struct {
 
 type OrdersBodyItem struct {
 	ChannelId   string  `xml:"CHANNEL_ID"`
-	Sku         int     `xml:"SKU"`
+	Sku         string  `xml:"SKU"`
 	ChannelSku  string  `xml:"CHANNEL_SKU"`
 	Ean         string  `xml:"EAN"`
 	Quantity    int     `xml:"QUANTITY"`
