@@ -11,8 +11,6 @@
 
 package gotradebyte
 
-import "time"
-
 // OrdersBody is to decode xml data
 type OrdersBody struct {
 	Order []OrdersBodyOrder `xml:"ORDER"`
@@ -78,13 +76,13 @@ type OrdersBodyItems struct {
 }
 
 type OrdersBodyItem struct {
-	TbId          int       `xml:"TB_ID"`
-	ChannelId     string    `xml:"CHANNEL_ID"`
-	Sku           int       `xml:"SKU"`
-	ChannelSku    string    `xml:"CHANNEL_SKU"`
-	Quantity      int       `xml:"QUANTITY"`
-	BillingText   string    `xml:"BILLING_TEXT"`
-	TransferPrice float64   `xml:"TRANSFER_PRICE"`
-	ItemPrice     float64   `xml:"ITEM_PRICE"`
-	DateCreated   time.Time `xml:"DATE_CREATED"`
+	TbId          int     `xml:"TB_ID"`
+	ChannelId     string  `xml:"CHANNEL_ID"`
+	Sku           int     `xml:"SKU"`
+	ChannelSku    string  `xml:"CHANNEL_SKU"`
+	Quantity      int     `xml:"QUANTITY"`
+	BillingText   string  `xml:"BILLING_TEXT"`
+	TransferPrice float64 `xml:"TRANSFER_PRICE"`
+	ItemPrice     float64 `xml:"ITEM_PRICE"`
+	DateCreated   string  `xml:"DATE_CREATED"`
 }
