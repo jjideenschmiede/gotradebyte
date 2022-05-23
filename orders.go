@@ -20,6 +20,8 @@ type OrdersBodyOrder struct {
 	OrderData OrdersBodyOrderData `xml:"ORDER_DATA"`
 	SellTo    OrdersBodySellTo    `xml:"SELL_TO"`
 	ShipTo    OrdersBodyShipTo    `xml:"SHIP_TO"`
+	Shipment  OrdersBodyShipment  `xml:"SHIPMENT"`
+	Payment   OrdersBodyPayment   `xml:"PAYMENT"`
 	Items     []OrdersBodyItem    `xml:"ITEMS"`
 }
 
@@ -58,6 +60,15 @@ type OrdersBodyShipTo struct {
 	Zip             string `xml:"ZIP"`
 	City            string `xml:"CITY"`
 	Country         string `xml:"COUNTRY"`
+}
+
+type OrdersBodyShipment struct {
+	Price float64 `xml:"PRICE"`
+}
+
+type OrdersBodyPayment struct {
+	Price       float64     `xml:"PRICE"`
+	DirectDebit interface{} `xml:"DIRECTDEBIT"`
 }
 
 type OrdersBodyItem struct {
