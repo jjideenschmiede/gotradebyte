@@ -26,7 +26,7 @@ type OrdersBodyOrder struct {
 type OrdersBodyOrderData struct {
 	OrderDate       string `xml:"ORDER_DATE"`
 	ChannelSign     string `xml:"CHANNEL_SIGN"`
-	ChannelId       int    `xml:"CHANNEL_ID"`
+	ChannelId       string `xml:"CHANNEL_ID"`
 	ChannelNo       string `xml:"CHANNEL_NO"`
 	Approved        int    `xml:"APPROVED"`
 	ItemCount       int    `xml:"ITEM_COUNT"`
