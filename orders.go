@@ -67,7 +67,8 @@ type OrdersBodyShipment struct {
 }
 
 type OrdersBodyPayment struct {
-	Price       float64     `xml:"PRICE"`
+	Type        string      `xml:"TYPE"`
+	Costs       float64     `xml:"COSTS"`
 	DirectDebit interface{} `xml:"DIRECTDEBIT"`
 }
 
