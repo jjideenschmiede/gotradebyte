@@ -13,11 +13,11 @@ package gotradebyte
 
 // DeliveryMessagesBody is to encode xml data
 type DeliveryMessagesBody struct {
-	MessagesList []DeliveryMessagesBodyMessagesList `xml:"MESSAGES_LIST"`
+	MessagesList DeliveryMessagesBodyMessagesList `xml:"MESSAGES_LIST"`
 }
 
 type DeliveryMessagesBodyMessagesList struct {
-	Message DeliveryMessagesBodyMessage `xml:"MESSAGE"`
+	Message []DeliveryMessagesBodyMessage `xml:"MESSAGE"`
 }
 
 type DeliveryMessagesBodyMessage struct {
