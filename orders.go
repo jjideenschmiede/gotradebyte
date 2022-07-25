@@ -34,6 +34,7 @@ type OrdersBodyOrderData struct {
 	Approved        int    `xml:"APPROVED"`
 	ItemCount       int    `xml:"ITEM_COUNT"`
 	TotalItemAmount string `xml:"TOTAL_ITEM_AMOUNT"`
+	DateCreated     string `xml:"DATE_CREATED"`
 }
 
 type OrdersBodySellTo struct {
