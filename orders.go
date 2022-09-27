@@ -61,6 +61,8 @@ type OrdersBodyShipTo struct {
 	Zip             string `xml:"ZIP"`
 	City            string `xml:"CITY"`
 	Country         string `xml:"COUNTRY"`
+	PhonePrivate    string `xml:"PHONE_PRIVATE"`
+	Email           string `xml:"EMAIL"`
 }
 
 type OrdersBodyShipment struct {
