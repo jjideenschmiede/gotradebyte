@@ -39,7 +39,7 @@ type OrdersBodyOrderData struct {
 
 type OrdersBodySellTo struct {
 	TbId            int    `xml:"TB_ID"`
-	ChannelNo       int    `xml:"CHANNEL_NO"`
+	ChannelNo       string `xml:"CHANNEL_NO"`
 	FirstName       string `xml:"FIRSTNAME"`
 	LastName        string `xml:"LASTNAME"`
 	StreetNo        string `xml:"STREET_NO"`
@@ -53,7 +53,7 @@ type OrdersBodySellTo struct {
 
 type OrdersBodyShipTo struct {
 	TbId            int    `xml:"TB_ID"`
-	ChannelNo       int    `xml:"CHANNEL_NO"`
+	ChannelNo       string `xml:"CHANNEL_NO"`
 	FirstName       string `xml:"FIRSTNAME"`
 	LastName        string `xml:"LASTNAME"`
 	StreetNo        string `xml:"STREET_NO"`
